@@ -1,0 +1,53 @@
+.main {
+  display: flex;
+  font-family: "Helvetica Neue";
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.inner-main {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9375rem;
+  height: 100%;
+  justify-content: center;
+  margin: 0 15%;
+  width: 100%;
+}
+
+.offer-options-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.offer-box {
+  border: 1px solid black;
+  border-radius: 6px;
+  color: #fff;
+  flex-direction: column;
+  height: 216px;
+  margin: 0 15px;
+  padding: 20px;
+  width: 314px;
+}
+
+.offer-1 {
+  background-color: #2e84ed;
+}
+
+.offer-2 {
+  background-color: #0f4a92;
+}
+
+.offer-3 {
+  background-color: #333333;
+}
+
+.offer-box-title {
+  font-size: 26px;
+}
+
+/*# sourceMappingURL=index.css.map */
