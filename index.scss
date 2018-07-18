@@ -1,51 +1,114 @@
 .main {
-	display: flex;
-	font-family: "Helvetica Neue";
-	height: 100vh;
-	justify-content: center;
-	width: 100%;
+  display: flex;
+  font-family: "Helvetica Neue";
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
 }
 
 .inner-main {
-	background-color: white;
-	display: flex;
-	flex-wrap: wrap;
-	font-size: 0.9375rem;
-	height: 100%;
-	justify-content: center;
-	margin: 0 15%;
-	width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9375rem;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 15%;
+  }
 }
 
 .offer-options-container {
-	display: flex;
-	justify-content: center;
-	width: 100%;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .offer-box {
-	border: 1px solid black;
-	border-radius: 6px;
-	color: #fff;
-	flex-direction: column;
-	height: 216px;
-	margin: 0 15px;
-	padding: 20px;
-	width: 314px;
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 215px;
+  letter-spacing: 1px;
+  margin: 20px 15px;
+  padding: 20px;
+
+  @media (min-width: 768px) {
+    height: 182px;
+    width: 314px;
+  }
 }
 
 .offer-1 {
-	background-color: #2e84ed;
+  background-color: #2e84ed;
 }
 
 .offer-2 {
-	background-color: #0f4a92;
+  background-color: #0f4a92;
 }
 
 .offer-3 {
-	background-color: #333333;
+  background-color: #333333;
 }
 
 .offer-box-title {
-	font-size: 26px;
+  font-size: 26px;
+  font-weight: lighter;
+  min-height: 70px;
+
+  @media (min-width: 768px) {
+    min-height: 88px;
+  }
+}
+
+.offer-box-price {
+  font-size: 19px;
+  font-weight: lighter;
+  margin: 0 0 20px;
+}
+
+.offer-box-mobile-details {
+  align-self: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button-select-option {
+  height: 44px;
+  margin: 0 0 25px;
+  text-align: center;
+
+  button {
+    background-color: #81b5f4;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    button {
+      background-color: #4d7b9f;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 13px;
+      height: 100%;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 100%;
+    }
+  }
 }
