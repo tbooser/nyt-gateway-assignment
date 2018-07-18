@@ -10,19 +10,70 @@
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-  font-size: 0.9375rem;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
+  padding: 0 20px;
 }
 @media screen and (min-width: 768px) {
   .inner-main {
+    font-size: 0.9375rem;
+    height: 100%;
+    justify-content: center;
     margin: 0 15%;
+    width: 100%;
   }
 }
 
-.offer-options-container {
+.lorem-ipsum-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sub-header-copy {
+  margin-bottom: 20px;
+}
+
+.fourteen-px {
+  font-size: 14px;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.half-opacity {
+  opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.login {
+  text-decoration: none;
+}
+
+.horizontal-line-container {
+  padding: 20px 0;
   width: 100%;
+}
+
+.horizontal-line {
+  align-self: start;
+  border-bottom: 2px solid #000000;
+  display: flex;
+  opacity: 0.5;
+  width: 50px;
+}
+
+.offer-options-container {
+  min-width: 280px;
 }
 @media (min-width: 768px) {
   .offer-options-container {
@@ -38,7 +89,7 @@
   flex-direction: column;
   height: 215px;
   letter-spacing: 1px;
-  margin: 20px 15px;
+  margin: 20px 0;
   padding: 20px;
 }
 @media (min-width: 768px) {
@@ -74,11 +125,20 @@
 .offer-box-price {
   font-size: 19px;
   font-weight: lighter;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
+}
+.offer-box-price .price-strike {
+  opacity: 0.5;
 }
 
 .offer-box-mobile-details {
   align-self: center;
+  font-size: 17px;
+  font-weight: 300;
+}
+.offer-box-mobile-details a {
+  color: #fff;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .offer-box-mobile-details {
@@ -88,7 +148,7 @@
 
 .button-select-option {
   height: 44px;
-  margin: 0 0 25px;
+  margin: 0 0 15px;
   text-align: center;
 }
 .button-select-option button {
