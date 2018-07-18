@@ -13,25 +13,39 @@
   font-size: 0.9375rem;
   height: 100%;
   justify-content: center;
-  margin: 0 15%;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .inner-main {
+    margin: 0 15%;
+  }
 }
 
 .offer-options-container {
-  display: flex;
-  justify-content: center;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .offer-options-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .offer-box {
-  border: 1px solid black;
   border-radius: 6px;
   color: #fff;
+  display: flex;
   flex-direction: column;
-  height: 216px;
-  margin: 0 15px;
+  height: 215px;
+  letter-spacing: 1px;
+  margin: 20px 15px;
   padding: 20px;
-  width: 314px;
+}
+@media (min-width: 768px) {
+  .offer-box {
+    height: 182px;
+    width: 314px;
+  }
 }
 
 .offer-1 {
@@ -48,6 +62,58 @@
 
 .offer-box-title {
   font-size: 26px;
+  font-weight: lighter;
+  min-height: 70px;
+}
+@media (min-width: 768px) {
+  .offer-box-title {
+    min-height: 88px;
+  }
+}
+
+.offer-box-price {
+  font-size: 19px;
+  font-weight: lighter;
+  margin: 0 0 20px;
+}
+
+.offer-box-mobile-details {
+  align-self: center;
+}
+@media (min-width: 768px) {
+  .offer-box-mobile-details {
+    display: none;
+  }
+}
+
+.button-select-option {
+  height: 44px;
+  margin: 0 0 25px;
+  text-align: center;
+}
+.button-select-option button {
+  background-color: #81b5f4;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .button-select-option button {
+    background-color: #4d7b9f;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
