@@ -23,9 +23,20 @@
   }
 }
 
+@media (min-width: 767px) {
+  .intro-copy-container {
+    text-align: center;
+  }
+}
+
 .lorem-ipsum-header {
   font-size: 18px;
   font-weight: bold;
+}
+@media (min-width: 767px) {
+  .lorem-ipsum-header {
+    font-size: 26px;
+  }
 }
 
 .sub-header-copy {
@@ -42,6 +53,10 @@
 
 .half-opacity {
   opacity: 0.5;
+}
+
+.checkmark {
+  background: url(./icons/checkmark.png);
 }
 
 .text-decoration-none {
@@ -61,12 +76,19 @@
 }
 
 .login {
+  font-weight: bold;
   text-decoration: none;
 }
 
 .horizontal-line-container {
   padding: 20px 0;
   width: 100%;
+}
+@media (min-width: 767px) {
+  .horizontal-line-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .horizontal-line {
@@ -75,6 +97,11 @@
   display: flex;
   opacity: 0.5;
   width: 50px;
+}
+@media (min-width: 767px) {
+  .horizontal-line {
+    width: 100px;
+  }
 }
 
 .offer-options-container {
@@ -150,18 +177,36 @@
   opacity: 0.5;
 }
 
-.offer-box-mobile-details {
+.offer-box-mobile-details-button {
   align-self: center;
   font-size: 17px;
   font-weight: 300;
 }
-.offer-box-mobile-details a {
+.offer-box-mobile-details-button a {
   color: #fff;
   text-decoration: none;
 }
 @media (min-width: 768px) {
-  .offer-box-mobile-details {
+  .offer-box-mobile-details-button {
     display: none;
+  }
+}
+
+.offer-box-mobile-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.offer-box-text-container {
+  padding: 0 0 0 10px;
+}
+
+@media (min-width: 768px) {
+  .offer-item {
+    display: flex;
+    padding: 15px 25px;
+    max-width: 314px;
   }
 }
 
@@ -197,6 +242,13 @@
 .info-container {
   min-width: 280px;
 }
+@media (min-width: 768px) {
+  .info-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
 
 .info-box-content {
   padding: 20px 10px 5px;
@@ -209,6 +261,11 @@
   margin: 0 0 15px;
   opacity: 1;
 }
+@media (min-width: 768px) {
+  .info-box {
+    width: 50%;
+  }
+}
 
 .info-box-header {
   font-weight: bold;
@@ -217,6 +274,16 @@
 
 .info-box-text {
   margin: 0 0 25px;
+}
+
+@media (min-width: 768px) {
+  .more-subscription-options {
+    margin: 0 20px 0 0;
+  }
+}
+
+.footer-container {
+  width: 100%;
 }
 
 .footer-content {
