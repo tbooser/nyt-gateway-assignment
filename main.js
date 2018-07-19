@@ -1,24 +1,12 @@
 "use strict";
 
 $(document).ready(() => {
-	$(".collapse").hide();
-	let open = false;
 	let current;
 
 	$(".offer-box-mobile-details-button").click(event => {
-		if (open === false) {
-			current = event.currentTarget.classList[1];
-			console.log(current);
-			$("." + current).toggle();
-			$(".collapse").show();
-			$(".expand").hide();
-			open = true;
-		} else {
-			$("." + current).hide();
-			$(".collapse").hide();
-			$(".expand").show();
-			open = false;
-		}
+		current = event.currentTarget.parentElement.className; // Grabs the unique class name from the parent of the click
+		$("#" + current).toggle(); // Toggles the id that matches the class name
+		$(".collapse-" + current).toggle(); // Toggles the collapse button that matches the class name
+		$(".expand-" + current).toggle(); // Toggles the expand button that matches the class name
 	});
 });
-
