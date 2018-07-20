@@ -30,48 +30,6 @@
   display: none;
 }
 
-.basic-mobile {
-  align-self: center;
-  display: flex;
-}
-
-.all-access-mobile {
-  align-self: center;
-  display: flex;
-}
-
-.home-delivery-mobile {
-  align-self: center;
-  display: flex;
-}
-
-.basic {
-  @media (min-width: 768px) {
-    &:hover {
-      color: #2e84ed;
-      cursor: pointer;
-    }
-  }
-}
-
-.all-access {
-  @media (min-width: 768px) {
-    &:hover {
-      color: #0f4a92;
-      cursor: pointer;
-    }
-  }
-}
-
-.home-delivery {
-  @media (min-width: 768px) {
-    &:hover {
-      color: #333333;
-      cursor: pointer;
-    }
-  }
-}
-
 .lighter {
   font-weight: lighter;
 }
@@ -222,11 +180,45 @@
   }
 }
 
-.offer-box-content {
-  padding: 20px 20px 0;
+.basic-mobile {
+  align-self: center;
+  display: flex;
+}
 
+.all-access-mobile {
+  align-self: center;
+  display: flex;
+}
+
+.home-delivery-mobile {
+  align-self: center;
+  display: flex;
+}
+
+.basic {
   @media (min-width: 768px) {
-    padding: 20px;
+    &:hover {
+      color: #2e84ed;
+      cursor: pointer;
+    }
+  }
+}
+
+.all-access {
+  @media (min-width: 768px) {
+    &:hover {
+      color: #0f4a92;
+      cursor: pointer;
+    }
+  }
+}
+
+.home-delivery {
+  @media (min-width: 768px) {
+    &:hover {
+      color: #333333;
+      cursor: pointer;
+    }
   }
 }
 
@@ -263,6 +255,14 @@
 }
 
 ////////////////////  Offer box content  ////////////////////
+
+.offer-box-content {
+  padding: 20px 20px 0;
+
+  @media (min-width: 768px) {
+    padding: 20px;
+  }
+}
 
 .offer-box-title {
   font-size: 26px;
