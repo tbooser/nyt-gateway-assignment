@@ -20,69 +20,10 @@
   }
 }
 
-.intro-copy-container {
-  @media (max-width: 767px) {
-    max-width: 314px;
-  }
-
-  @media (min-width: 768px) {
-    text-align: center;
-  }
-}
-
-.limit-reached {
-  margin: 10px 0;
-
-  @media (min-width: 768px) {
-    font-size: 15px;
-  }
-}
-
-.lorem-ipsum-header {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1;
-  margin: 0 0 10px;
-
-  @media (min-width: 768px) {
-    font-size: 26px;
-  }
-}
-
-.student-offer {
-  margin: 0 0 10px;
-
-  a {
-    color: black;
-    text-decoration-color: black;
-  }
-
-  @media (min-width: 768px) {
-    letter-spacing: 0.5px;
-    margin: 0 0 35px;
-  }
-}
-
-.sub-header-copy {
-  font-size: 14px;
-  margin-bottom: 20px;
-
-  @media (min-width: 768px) {
-    font-size: 15px;
-    letter-spacing: 0.5px;
-  }
-}
-
 ////////////////////  Utility classes  ////////////////////
 
 .collapse {
   display: none;
-}
-
-.visible-mobile {
-  @media (max-width: 767px) {
-    display: flex;
-  }
 }
 
 .hidden {
@@ -131,22 +72,6 @@
   }
 }
 
-.visible-mobile {
-  display: flex;
-}
-
-.hidden-mobile {
-  display: flex;
-
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
-
-.fourteen-px {
-  font-size: 14px;
-}
-
 .lighter {
   font-weight: lighter;
 }
@@ -155,16 +80,8 @@
   font-weight: 700;
 }
 
-.half-opacity {
-  opacity: 0.5;
-}
-
 .checkmark {
   background: url(./icons/checkmark.png);
-}
-
-.text-decoration-none {
-  text-decoration: none;
 }
 
 .desktop {
@@ -176,6 +93,26 @@
 .mobile {
   @media (min-width: 768px) {
     display: none;
+  }
+}
+
+////////////////////  Intro container  ////////////////////
+
+.intro-copy-container {
+  @media (max-width: 767px) {
+    max-width: 314px;
+  }
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+}
+
+.limit-reached {
+  margin: 10px 0;
+
+  @media (min-width: 768px) {
+    font-size: 15px;
   }
 }
 
@@ -209,19 +146,43 @@
   }
 }
 
-.offer-options-container {
-  @media (max-width: 767px) {
-    min-width: 280px;
-  }
+.lorem-ipsum-header {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 10px;
 
   @media (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 50px;
+    font-size: 26px;
   }
 }
 
-////////////////////  Offer box  ////////////////////
+.sub-header-copy {
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.student-offer {
+  font-size: 14px;
+  margin: 0 0 10px;
+
+  a {
+    color: black;
+    text-decoration-color: black;
+  }
+
+  @media (min-width: 768px) {
+    letter-spacing: 0.5px;
+    margin: 0 0 35px;
+  }
+}
+
+////////////////////  Offer box container  ////////////////////
 
 .offer-container {
   display: flex;
@@ -233,8 +194,16 @@
   }
 }
 
-.offers {
-  display: flex;
+.offer-options-container {
+  @media (max-width: 767px) {
+    min-width: 280px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px;
+  }
 }
 
 .offer-box {
@@ -292,6 +261,8 @@
     }
   }
 }
+
+////////////////////  Offer box content  ////////////////////
 
 .offer-box-title {
   font-size: 26px;
@@ -418,7 +389,7 @@
   }
 }
 
-////////////////////  Info box  ////////////////////
+////////////////////  Info box container  ////////////////////
 
 .info-container {
   margin: 30px 0 20px;
@@ -479,6 +450,8 @@
   }
 }
 
+////////////////////  Footer container  ////////////////////
+
 .footer-container {
   margin: 0 0 40px;
   width: 100%;
@@ -501,7 +474,4 @@
     color: black;
     text-decoration-color: black;
   }
-}
-
-footer-content {
 }
