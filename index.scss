@@ -453,12 +453,16 @@
 ////////////////////  Footer container  ////////////////////
 
 .footer-container {
-  margin: 0 0 40px;
   width: 100%;
+
+  @media (max-width: 767px) {
+    margin: 40px 0;
+  }
 
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
+    margin: 0 0 40px;
   }
 }
 
