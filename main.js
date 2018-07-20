@@ -20,4 +20,8 @@ $(document).ready(() => {
       active[current] = false;
     }
   });
+
+  $("a").click(e => {
+    e.preventDefault();
+  });
 });

@@ -21,71 +21,8 @@
   }
 }
 
-@media (max-width: 767px) {
-  .intro-copy-container {
-    max-width: 314px;
-  }
-}
-@media (min-width: 768px) {
-  .intro-copy-container {
-    text-align: center;
-  }
-}
-
-.limit-reached {
-  margin: 10px 0;
-}
-@media (min-width: 768px) {
-  .limit-reached {
-    font-size: 15px;
-  }
-}
-
-.lorem-ipsum-header {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1;
-  margin: 0 0 10px;
-}
-@media (min-width: 768px) {
-  .lorem-ipsum-header {
-    font-size: 26px;
-  }
-}
-
-.student-offer {
-  margin: 0 0 10px;
-}
-.student-offer a {
-  color: black;
-  text-decoration-color: black;
-}
-@media (min-width: 768px) {
-  .student-offer {
-    letter-spacing: 0.5px;
-    margin: 0 0 35px;
-  }
-}
-
-.sub-header-copy {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .sub-header-copy {
-    font-size: 15px;
-    letter-spacing: 0.5px;
-  }
-}
-
 .collapse {
   display: none;
-}
-
-@media (max-width: 767px) {
-  .visible-mobile {
-    display: flex;
-  }
 }
 
 .hidden {
@@ -128,23 +65,6 @@
   }
 }
 
-.visible-mobile {
-  display: flex;
-}
-
-.hidden-mobile {
-  display: flex;
-}
-@media (max-width: 767px) {
-  .hidden-mobile {
-    display: none;
-  }
-}
-
-.fourteen-px {
-  font-size: 14px;
-}
-
 .lighter {
   font-weight: lighter;
 }
@@ -153,16 +73,8 @@
   font-weight: 700;
 }
 
-.half-opacity {
-  opacity: 0.5;
-}
-
 .checkmark {
   background: url(./icons/checkmark.png);
-}
-
-.text-decoration-none {
-  text-decoration: none;
 }
 
 @media (max-width: 767px) {
@@ -174,6 +86,26 @@
 @media (min-width: 768px) {
   .mobile {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-copy-container {
+    max-width: 314px;
+  }
+}
+@media (min-width: 768px) {
+  .intro-copy-container {
+    text-align: center;
+  }
+}
+
+.limit-reached {
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .limit-reached {
+    font-size: 15px;
   }
 }
 
@@ -209,16 +141,41 @@
   }
 }
 
-@media (max-width: 767px) {
-  .offer-options-container {
-    min-width: 280px;
-  }
+.lorem-ipsum-header {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 10px;
 }
 @media (min-width: 768px) {
-  .offer-options-container {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 50px;
+  .lorem-ipsum-header {
+    font-size: 26px;
+  }
+}
+
+.sub-header-copy {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .sub-header-copy {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.student-offer {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+.student-offer a {
+  color: black;
+  text-decoration-color: black;
+}
+@media (min-width: 768px) {
+  .student-offer {
+    letter-spacing: 0.5px;
+    margin: 0 0 35px;
   }
 }
 
@@ -233,8 +190,17 @@
   }
 }
 
-.offers {
-  display: flex;
+@media (max-width: 767px) {
+  .offer-options-container {
+    min-width: 280px;
+  }
+}
+@media (min-width: 768px) {
+  .offer-options-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px;
+  }
 }
 
 .offer-box {
