@@ -8,7 +8,6 @@
 
 .inner-main {
   background-color: white;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 20px;
@@ -17,7 +16,6 @@
     font-size: 0.9375rem;
     height: 100%;
     justify-content: center;
-    margin: 0 22%;
     width: 100%;
   }
 }
@@ -39,15 +37,16 @@
 .lorem-ipsum-header {
   font-size: 18px;
   font-weight: bold;
+  line-height: 1;
+  margin: 0 0 10px;
 
   @media (min-width: 767px) {
     font-size: 26px;
-    margin: 0 0 10px;
   }
 }
 
 .student-offer {
-  margin: 0 0 40px;
+  margin: 0 0 10px;
 
   a {
     color: black;
@@ -56,6 +55,7 @@
 
   @media (min-width: 767px) {
     letter-spacing: 0.5px;
+    margin: 0 0 40px;
   }
 }
 
@@ -69,39 +69,20 @@
   }
 }
 
-////////////////////  Reusable classes  ////////////////////
-
-// .basic-button {
-//   background-color: ;
-// }
-
-// .all-access-button {
-//   background-color: ;
-// }
-
-// .home-delivery-button {
-//   background-color: ;
-// }
+////////////////////  Utility classes  ////////////////////
 
 .collapse {
   display: none;
 }
 
-.visible {
-  display: flex;
+.visible-mobile {
+  @media (max-width: 767px) {
+    display: flex;
+  }
 }
 
 .hidden {
   display: none;
-}
-
-.basic-hover {
-  @media (min-width: 768px) {
-    &:hover {
-      color: #2e84ed;
-      cursor: pointer;
-    }
-  }
 }
 
 .basic-mobile {
@@ -119,7 +100,16 @@
   display: flex;
 }
 
-.all-access-hover {
+.basic {
+  @media (min-width: 768px) {
+    &:hover {
+      color: #2e84ed;
+      cursor: pointer;
+    }
+  }
+}
+
+.all-access {
   @media (min-width: 768px) {
     &:hover {
       color: #0f4a92;
@@ -128,12 +118,24 @@
   }
 }
 
-.home-delivery-hover {
+.home-delivery {
   @media (min-width: 768px) {
     &:hover {
       color: #333333;
       cursor: pointer;
     }
+  }
+}
+
+.visible-mobile {
+  display: flex;
+}
+
+.hidden-mobile {
+  display: flex;
+
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -174,12 +176,13 @@
 }
 
 .login {
+  color: black;
   font-weight: bold;
   text-decoration: none;
 }
 
 .horizontal-line-container {
-  padding: 20px 0;
+  padding: 10px 0 15px;
   width: 100%;
 
   @media (min-width: 767px) {
@@ -204,7 +207,6 @@
 
 .offer-options-container {
   @media (max-width: 767px) {
-    max-width: 280px;
     min-width: 280px;
   }
 
@@ -218,9 +220,13 @@
 ////////////////////  Offer box  ////////////////////
 
 .offer-container {
-  // max-width: 33.333%;
   display: flex;
   flex-direction: column;
+  max-width: 314px;
+
+  @media (min-width: 768px) {
+    margin: 0 10px;
+  }
 }
 
 .offers {
@@ -232,25 +238,26 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  height: 182px;
   letter-spacing: 1px;
-  margin: 20px 0;
-  padding: 15px 20px 5px;
+  margin: 10px 0;
+  max-height: 231px;
 
   @media (min-width: 768px) {
-    width: 314px;
-    margin: 0 15px;
+    height: 182px;
     padding: 0;
+    width: 100%;
   }
 }
 
 .offer-box-content {
+  padding: 20px 20px 0;
+
   @media (min-width: 768px) {
     padding: 20px;
   }
 }
 
-.offer-1 {
+.offer-basic {
   background-color: #2e84ed;
 
   button {
@@ -258,7 +265,7 @@
   }
 }
 
-.offer-2 {
+.offer-all-access {
   background-color: #0f4a92;
 
   button {
@@ -266,7 +273,7 @@
   }
 }
 
-.offer-3 {
+.offer-home-delivery {
   background-color: #333333;
 
   button {
@@ -274,7 +281,7 @@
   }
 
   @media (max-width: 767px) {
-    height: 200px;
+    height: 231px;
 
     button {
       background-color: #848484;
@@ -290,12 +297,21 @@
   @media (min-width: 768px) {
     margin: 0 0 5px 0;
   }
+
+  @media (min-width: 768px) and (max-width: 1090px) {
+    font-size: 2vw;
+  }
 }
 
 .offer-box-price {
   font-size: 19px;
   font-weight: lighter;
   margin: 0 0 10px;
+
+  @media (min-width: 768px) and (max-width: 1090px) {
+    font-size: 1.5vw;
+    white-space: nowrap;
+  }
 
   .price-strike {
     opacity: 0.5;
@@ -306,6 +322,7 @@
   align-self: center;
   font-size: 17px;
   font-weight: 300;
+  margin: 0 0 10px;
 
   a {
     color: #fff;
@@ -318,10 +335,22 @@
 }
 
 .offer-box-details {
-  @media (max-width: 76px) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (max-width: 767px) {
     display: none;
   }
+}
 
+.offer-box-details-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.offer-box-details-mobile.visible {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -338,11 +367,17 @@
 
 .offer-item {
   display: flex;
-  padding: 15px 10px 25px;
+  padding: 10px 10px 25px;
   max-width: 314px;
 
   @media (min-width: 768px) {
-    padding: 15px 25px;
+    padding: 15px;
+  }
+
+  span {
+    @media (min-width: 768px) {
+      padding: 3px 0 0;
+    }
   }
 }
 
@@ -364,14 +399,17 @@
 
   @media (min-width: 768px) {
     button {
-      background-color: #4d7b9f;
-      border-radius: 4px;
-      color: #fff;
       font-weight: bold;
-      font-size: 13px;
       text-decoration: none;
       text-transform: uppercase;
       width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1090px) {
+    button {
+      font-size: 1.5vw;
+      white-space: nowrap;
     }
   }
 }
@@ -379,12 +417,17 @@
 ////////////////////  Info box  ////////////////////
 
 .info-container {
-  margin: 0 0 20px;
+  margin: 30px 0 20px;
   min-width: 280px;
+
+  @media (max-width: 767px) {
+    max-width: 314px;
+  }
 
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
   }
 }
@@ -397,7 +440,8 @@
   opacity: 1;
 
   @media (min-width: 768px) {
-    width: 50%;
+    max-width: 480px;
+    width: 100%;
   }
 }
 
@@ -421,6 +465,7 @@
 .info-box-link {
   a {
     color: #2e84ed;
+    font-weight: bold;
   }
 }
 
@@ -430,12 +475,18 @@
   }
 }
 
-.info-box-text {
-  // opacity: 1;
-}
-
 .footer-container {
   margin: 0 0 40px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.footer-content-container {
+  max-width: 977px;
   width: 100%;
 }
 
@@ -446,4 +497,7 @@
     color: black;
     text-decoration-color: black;
   }
+}
+
+footer-content {
 }

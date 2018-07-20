@@ -13,11 +13,11 @@
 <!-- Intro section --> 
 
       <div class="intro-copy-container">
-        <div class='limit-reached'>You have reached your limit of free articles.<span class="heavy"><a class="login" href='#'>Already a subscriber? Log in.</a></span></div>  
+        <div class='limit-reached'>You have reached your limit of free articles. <br class="mobile"/><span class="heavy"><a class="login" href='#'> Already a subscriber? Log in.</a></span></div>  
         <div class="horizontal-line-container"><span class="horizontal-line"></span></div>
         <div class="lorem-ipsum-header desktop">Lorem ipsum dolor sit amet, consectetur adipisicing.<br /> Elit, sed do eiusmod tempor incididunt.</div>
         <div class="lorem-ipsum-header mobile">Elit, sed do eiusmod <br />tempor incididunt.</div>
-        <div class="sub-header-copy lighter">Choose between our Digital or Home Delivery options. You may cancel anytime.</div>
+        <div class="sub-header-copy lighter">Choose between our Digital or Home Delivery options. <br class="mobile" />You may cancel anytime.</div>
         <div class="student-offer fourteen-px">Are you a student? <a class="lighter" href='#'>Special rates here.</a></div>
       </div>
 
@@ -25,8 +25,8 @@
 
 <!-- Subscription option 1 -->          
 
-        <div class="offer-container basic-hover">
-          <div class="offer-box offer-1">
+        <div class="offer-container basic">
+          <div class="offer-box offer-basic">
             <div class="offer-box-content">
               <div class='offer-box-title'>Basic</div>
               <div class="offer-box-price"><s class='price-strike'>$XX.XX</s> $XX.XX/month</div>
@@ -37,13 +37,13 @@
               <div class="offer-box-mobile-details-button collapse collapse-basic-mobile hidden"><span><img src="./icons/collapse-button.png"></span></div>
             </div>
           </div>
-          <div class="offer-box-details mobile hidden" id='basic-mobile'>
+          <div class="offer-box-details-mobile hidden" id='basic-mobile'>
             <div class="offer-item">
               <span><img src="./icons/checkmark.png"></span>
               <div class="offer-box-text-container"><span>Access to NYTimes.com and the NYT app.</span></div>
             </div>
           </div>
-          <div class="offer-box-details desktop">
+          <div class="offer-box-details">
             <div class="offer-item">
               <span><img src="./icons/checkmark.png"></span>
               <div class="offer-box-text-container"><span>Access to NYTimes.com and the NYT app.</span></div>
@@ -53,8 +53,8 @@
 
 <!-- Subscription option 2 -->    
         
-        <div class="offer-container all-access-hover">
-          <div class="offer-box offer-2">
+        <div class="offer-container all-access">
+          <div class="offer-box offer-all-access">
             <div class="offer-box-content">
               <div class='offer-box-title'>All Access</div>
               <div class="offer-box-price"><s class='price-strike'>$XX.XX</s> $XX.XX/month</div>
@@ -65,7 +65,21 @@
               <div class="offer-box-mobile-details-button collapse collapse-all-access-mobile hidden"><span><img src="./icons/collapse-button.png"></span></div>
             </div>
           </div>
-          <div class="offer-box-details" id='all-access-mobile'>
+          <div class="offer-box-details-mobile hidden" id='all-access-mobile'>
+            <div class="offer-item">
+              <span><img src="./icons/checkmark.png"></span>
+              <div class="offer-box-text-container"><span>Access to NYTimes.com and the NYT app.</span></div>
+            </div>
+            <div class="offer-item">  
+              <span><img src="./icons/checkmark.png"></span>
+              <div class="offer-box-text-container">
+                <span>
+                  <span class="heavy">NYT Crossword </span><br />Play the puzzle for free on any device. Enjoy 20 years of crossword archives. Solve in minutes with our bite-size mini puzzles.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="offer-box-details">
             <div class="offer-item">
               <span><img src="./icons/checkmark.png"></span>
               <div class="offer-box-text-container"><span>Access to NYTimes.com and the NYT app.</span></div>
@@ -83,8 +97,8 @@
 
 <!-- Subscription option 3 -->          
 
-        <div class="offer-container home-delivery-hover">
-          <div class="offer-box offer-3">
+        <div class="offer-container home-delivery">
+          <div class="offer-box offer-home-delivery">
             <div class="offer-box-content">
               <div class='offer-box-title'>Home Delivery + <br /> All Access</div>
               <div class="offer-box-price desktop">As low as <s class='price-strike'>$XX.XX</s> $XX.XX/week</div>
@@ -96,7 +110,25 @@
               <div class="offer-box-mobile-details-button collapse collapse-home-delivery-mobile hidden"><span><img src="./icons/collapse-button.png"></span></div>
             </div>
           </div>
-          <div class="offer-box-details" id='home-delivery-mobile'>
+          <div class="offer-box-details-mobile hidden" id='home-delivery-mobile'>
+            <div class="offer-item">
+              <span><img src="./icons/checkmark.png"></span>
+              <div class="offer-box-text-container"><span>Access to NYTimes.com and the NYT app.</span></div>
+            </div>
+            <div class="offer-item">  
+              <span><img src="./icons/checkmark.png"></span>
+              <div class="offer-box-text-container">
+                <span>
+                  <span class="heavy">NYT Crossword </span><br /> Play the puzzle for free on any device. Enjoy 20 years of crossword archives. Solve in minutes with our bite-size mini puzzles.
+                </span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <span><img src="./icons/checkmark.png"></span>
+              <div class="offer-box-text-container"><span><span class="heavy">Home Delivery </span><br />Convenient and reliable delivery. Guaranteed. Customized delivery options such as Sunday only, Fri.–Sun., weekday delivery or daily delivery.</span></div>
+            </div>
+          </div>
+          <div class="offer-box-details">
             <div class="offer-item">
               <span><img src="./icons/checkmark.png"></span>
               <div class="offer-box-text-container"><span>Access to NYTimes.com and the NYT app.</span></div>
@@ -139,8 +171,10 @@
 <!-- Footer -->
 
       <div class="footer-container">
-        <div class="footer-content lighter">
-          <a href='#'>Copyright 2018</a>  |  <a href='#'>The New York Times Company</a><br class='mobile' />  |  <a href='#'>Privacy Policy</a>  |  <a href='#'>Terms of Sale</a>  |  <a href='#'>Contact Us</a>  |  <a href='#'>Feedback</a>  |  <a href='#'>Help</a>
+        <div class="footer-content-container">
+          <div class="footer-content lighter">
+            <a href='#'>Copyright 2018</a>  |  <a href='#'>The New York Times Company</a><br class='mobile' />  |  <a href='#'>Privacy Policy</a>  |  <a href='#'>Terms of Sale</a>  |  <a href='#'>Contact Us</a>  |  <a href='#'>Feedback</a>  |  <a href='#'>Help</a>
+          </div>
         </div>
       </div>
     </div>
