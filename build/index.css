@@ -29,42 +29,6 @@
   display: none;
 }
 
-.basic-mobile {
-  align-self: center;
-  display: flex;
-}
-
-.all-access-mobile {
-  align-self: center;
-  display: flex;
-}
-
-.home-delivery-mobile {
-  align-self: center;
-  display: flex;
-}
-
-@media (min-width: 768px) {
-  .basic:hover {
-    color: #2e84ed;
-    cursor: pointer;
-  }
-}
-
-@media (min-width: 768px) {
-  .all-access:hover {
-    color: #0f4a92;
-    cursor: pointer;
-  }
-}
-
-@media (min-width: 768px) {
-  .home-delivery:hover {
-    color: #333333;
-    cursor: pointer;
-  }
-}
-
 .lighter {
   font-weight: lighter;
 }
@@ -220,12 +184,39 @@
   }
 }
 
-.offer-box-content {
-  padding: 20px 20px 0;
+.basic-mobile {
+  align-self: center;
+  display: flex;
 }
+
+.all-access-mobile {
+  align-self: center;
+  display: flex;
+}
+
+.home-delivery-mobile {
+  align-self: center;
+  display: flex;
+}
+
 @media (min-width: 768px) {
-  .offer-box-content {
-    padding: 20px;
+  .basic:hover {
+    color: #2e84ed;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .all-access:hover {
+    color: #0f4a92;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-delivery:hover {
+    color: #333333;
+    cursor: pointer;
   }
 }
 
@@ -255,6 +246,15 @@
   }
   .offer-home-delivery button {
     background-color: #848484;
+  }
+}
+
+.offer-box-content {
+  padding: 20px 20px 0;
+}
+@media (min-width: 768px) {
+  .offer-box-content {
+    padding: 20px;
   }
 }
 
