@@ -12,7 +12,7 @@
   justify-content: center;
   padding: 0 20px;
 
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 0.9375rem;
     height: 100%;
     justify-content: center;
@@ -21,7 +21,11 @@
 }
 
 .intro-copy-container {
-  @media (min-width: 767px) {
+  @media (max-width: 767px) {
+    max-width: 314px;
+  }
+
+  @media (min-width: 768px) {
     text-align: center;
   }
 }
@@ -29,7 +33,7 @@
 .limit-reached {
   margin: 10px 0;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     font-size: 15px;
   }
 }
@@ -40,7 +44,7 @@
   line-height: 1;
   margin: 0 0 10px;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     font-size: 26px;
   }
 }
@@ -53,9 +57,9 @@
     text-decoration-color: black;
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     letter-spacing: 0.5px;
-    margin: 0 0 40px;
+    margin: 0 0 35px;
   }
 }
 
@@ -63,7 +67,7 @@
   font-size: 14px;
   margin-bottom: 20px;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     font-size: 15px;
     letter-spacing: 0.5px;
   }
@@ -185,7 +189,7 @@
   padding: 10px 0 15px;
   width: 100%;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: center;
     margin: 0 0 20px;
@@ -200,7 +204,7 @@
   opacity: 0.5;
   width: 50px;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     width: 100px;
   }
 }
@@ -322,7 +326,7 @@
   align-self: center;
   font-size: 17px;
   font-weight: 300;
-  margin: 0 0 10px;
+  margin: 5px 0 15px;
 
   a {
     color: #fff;
@@ -367,7 +371,7 @@
 
 .offer-item {
   display: flex;
-  padding: 10px 10px 25px;
+  padding: 15px 10px 30px;
   max-width: 314px;
 
   @media (min-width: 768px) {
@@ -383,7 +387,7 @@
 
 .button-select-option {
   height: 44px;
-  margin: 0 0 15px;
+  margin: 0 0 5px;
   text-align: center;
 
   button {
