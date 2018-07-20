@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(() => {
-  let active = {}; // Object to keep track of which dropdowns are opened/closed
+  let active = {}; // Object to keep track of which dropdowns are open/closed
 
   $(".offer-box-mobile-details-button").click(event => {
     let current = null; // Stores the class name of the clicked box
@@ -13,7 +13,6 @@ $(document).ready(() => {
       $(".expand-" + current).toggle(); // Toggles the expand button that matches the class name
       active[current] = true; // Sets the current box's active state to true
     } else if (active[current] === true) {
-      current = event.currentTarget.parentElement.className;
       $("#" + current).removeClass("mobile");
       $("#" + current).addClass("hidden");
       $(".collapse-" + current).toggle();
