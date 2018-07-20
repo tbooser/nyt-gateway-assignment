@@ -446,13 +446,18 @@
 }
 
 .footer-container {
-  margin: 0 0 40px;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .footer-container {
+    margin: 40px 0;
+  }
 }
 @media (min-width: 768px) {
   .footer-container {
     display: flex;
     justify-content: center;
+    margin: 0 0 40px;
   }
 }
 
